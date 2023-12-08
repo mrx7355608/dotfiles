@@ -55,7 +55,7 @@ bindsym $mod+Return exec xfce4-terminal
 bindsym $mod+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id dmenu_run -sb "#F6635C" -sf "#0f0f0f" -nf "#FE7BE5" -nb "#541675"
+bindsym $mod+d exec --no-startup-id rofi -show run
 
 # lock the screen
 bindsym Control+$mod+l exec "i3lock -i ~/Pictures/lockscreen.png"
@@ -188,15 +188,15 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # remove borders (NOT WORKING)
-default_border none
-default_floating_border normal
+default_border pixel 2
+default_floating_border pixel 2
 
 # gaps
-gaps inner 8px
+gaps inner 7px
 
 # colors
 # class                 border  backgr. text    indicator child_border
-client.focused          #411342 #411342 #f0f0f0 #411342   #411342
+client.focused          #c80815 #c80815 #f0f0f0 #c80815   #c80815
 client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
 client.unfocused        #333333 #222222 #888888 #292d2e   #222222
 client.urgent           #2f343a #900000 #ffffff #900000   #900000
@@ -206,6 +206,7 @@ client.background       #ffffff
 
 for_window [class="Game"] floating enable
 for_window [class="Game"] move position 500 100
+for_window [class=".*"] title_format " "
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -215,15 +216,15 @@ bar {
         height 22
         strip_workspace_numbers yes
         colors {
-            background #00000000
+            background #ffffff00
             statusline #ffffff
 
-            focused_workspace  #6a2eff #6a2eff #ffffff
+            focused_workspace  #b90e0a #b90e0a #ffffff
             active_workspace   #ffffff #333333
             inactive_workspace #888888 #222222
             urgent_workspace   #ffffff #900000
         }
 }
 
-exec_always feh --bg-scale ~/Pictures/sssss.jpg
+exec_always feh --bg-scale ~/Pictures/newnew.png
 exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
