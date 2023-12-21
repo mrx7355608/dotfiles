@@ -198,7 +198,7 @@ for_window [class="Game"] floating enable
 for_window [class="Game"] move position 500 100
 for_window [class=".*"] title_format " "
 
-set_from_resource $fg i3wm.color7 #f0f0f0
+set_from_resource $fg i3wm.color7 #000000
 set_from_resource $bg i3wm.color2 #f0f0f0
 
 # class                 border  backgr. text indicator child_border
@@ -212,12 +212,12 @@ client.background       $bg
 
 # i3status
 bar {
-    status_command i3status
+    height 24
     colors {
-        background #bg
-        statusline #fg
-        separator #fg
+        background #000000
+        statusline #ffffff
     }
+    status_command i3status -c ~/.config/i3/i3status.conf
 }
 
 # Start i3bar to display a workspace bar (plus the system information i3status
