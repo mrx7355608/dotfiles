@@ -29,6 +29,7 @@ return {
       -- list of servers for mason to install
       ensure_installed = {
         "tsserver",
+        "lua_ls",
         "html",
         "cssls",
         "tailwindcss",
@@ -39,6 +40,7 @@ return {
     mason_tool_installer.setup({
       ensure_installed = {
         "prettier", -- prettier formatter
+        "stylua", -- prettier formatter
       },
     })
   end,
