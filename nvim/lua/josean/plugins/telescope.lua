@@ -18,10 +18,15 @@ return {
                 mappings = {
                     i = {
                         ["<C-k>"] = actions.move_selection_previous, -- move to prev result
-                        ["<C-j>"] = actions.move_selection_next, -- move to next result
+                        ["<C-j>"] = actions.move_selection_next,     -- move to next result
                     },
                 },
             },
+            pickers = {
+                colorscheme = {
+                    enable_preview = true
+                }
+            }
         })
 
         local keymap = vim.keymap -- for conciseness
@@ -32,7 +37,7 @@ return {
         keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>", { desc = "Find string under cursor in cwd" })
         keymap.set("n", "<leader>ft", "<cmd>TodoTelescope<cr>", { desc = "Find todos" })
         keymap.set("n", "<leader>cs", "<cmd>Telescope colorscheme<cr>", { desc = "Change colorscheme" })
-        keymap.set("n", "<leader>dd", "<cmd>Telescope diagnostics<cr>", { desc = "See diagnostics" })
+        keymap.set("n", "<leader>de", "<cmd>Telescope diagnostics<cr>", { desc = "See diagnostics" })
         keymap.set("n", "<leader>ds", "<cmd>Telescope lsp_document_symbols<cr>", { desc = "See lsp symbols" })
     end,
 }
