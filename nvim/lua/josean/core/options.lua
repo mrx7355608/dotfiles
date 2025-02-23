@@ -38,5 +38,4 @@ opt.splitbelow = true -- split horizontal window to the bottom
 -- turn off swapfile
 opt.swapfile = false
 
-vim.cmd("set foldmethod=indent")
-vim.cmd("set clipboard+=unnamedplus")
+vim.cmd([[set foldmethod=indent]])
