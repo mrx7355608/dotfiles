@@ -30,9 +30,6 @@ return {
       ensure_installed = {
         "tsserver",
         "lua_ls",
-        "html",
-        "cssls",
-        "tailwindcss",
         "emmet_ls",
       },
     })
