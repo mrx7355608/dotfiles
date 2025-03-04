@@ -8,7 +8,7 @@ return {
     -- configure lualine with modified theme
     lualine.setup({
       options = {
-        theme = "rose-pine",
+        theme = "NeoSolarized",
       },
       sections = {
         lualine_x = {
