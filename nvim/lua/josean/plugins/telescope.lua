@@ -37,6 +37,7 @@ return {
     keymap.set("n", "<leader>ft", "<cmd>TodoTelescope<cr>", { desc = "Find todos" })
     keymap.set("n", "<leader>cs", "<cmd>Telescope colorscheme<cr>", { desc = "Change colorscheme" })
     keymap.set("n", "<leader>de", "<cmd>Telescope diagnostics<cr>", { desc = "See diagnostics" })
-    keymap.set("n", "<leader>ds", "<cmd>Telescope lsp_document_symbols<cr>", { desc = "See lsp symbols" })
+    keymap.set("n", "<leader>ds", "<cmd>Telescope lsp_document_symbols<cr>", { desc = "See lsp document symbols" })
+    keymap.set("n", "<leader>ws", "<cmd>Telescope lsp_workspace_symbols<cr>", { desc = "See lsp workspace symbols" })
   end,
 }
