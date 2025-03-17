@@ -23,7 +23,7 @@ return {
     "rose-pine/neovim",
     name = "rose-pine",
     config = function()
-      vim.cmd("colorscheme NeoSolarized")
+      vim.cmd("colorscheme nightfly")
     end,
   },
 }
