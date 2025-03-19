@@ -23,6 +23,7 @@ return {
     "rose-pine/neovim",
     name = "rose-pine",
     config = function()
+      vim.g.nightflyTransparent = true
       vim.cmd("colorscheme nightfly")
     end,
   },
