@@ -100,11 +100,11 @@ return {
           end,
         })
       end,
-      ["graphql"] = function()
-        -- configure graphql language server
-        lspconfig["graphql"].setup({
+      ["html-lsp"] = function()
+        -- configure emmet language server
+        lspconfig["html-lsp"].setup({
           capabilities = capabilities,
-          filetypes = { "graphql", "gql", "svelte", "typescriptreact", "javascriptreact" },
+          filetypes = { "html" },
         })
       end,
       ["emmet_ls"] = function()
