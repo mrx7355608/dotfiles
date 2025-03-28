@@ -72,7 +72,26 @@ return {
         },
       })
       vim.g.nightflyTransparent = true
-      vim.cmd("colorscheme nightfly")
+    end,
+  },
+  {
+    "Shatur/neovim-ayu",
+    name = "ayu",
+    config = function()
+      local colors = require("ayu.colors")
+      require("ayu").setup({
+        overrides = {
+          Normal = { bg = "None" },
+          NormalFloat = { bg = "none" },
+          ColorColumn = { bg = "None" },
+          SignColumn = { bg = "None" },
+          Folded = { bg = "None" },
+          FoldColumn = { bg = "None" },
+          CursorColumn = { bg = "None" },
+          VertSplit = { bg = "None" },
+        },
+      })
+      vim.cmd("colorscheme ayu")
     end,
   },
 }
