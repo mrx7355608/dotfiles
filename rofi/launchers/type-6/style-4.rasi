@@ -22,7 +22,7 @@ configuration {
 /*****----- Global Properties -----*****/
 * {
     font:                        "JetBrains Mono Nerd Font 10";
-    background:                  #0e1419ee;
+    background:                  #0e1419dd;
     background-alt:              #462D23;
     foreground:                  #FFFFFF;
     selected:                    #E25F3E;
@@ -60,7 +60,7 @@ mainbox {
 imagebox {
     padding:                     20px;
     background-color:            transparent;
-    background-image:            url("~/Downloads/wallpapers/City-Rain.png", height);
+    background-image:            url("~/Downloads/wallpapers/Classroom.png", height);
     orientation:                 vertical;
     children:                    [ "inputbar", "dummy", "mode-switcher" ];
 }
