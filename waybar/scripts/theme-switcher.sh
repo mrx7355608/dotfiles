@@ -4,8 +4,8 @@ WAYBAR_CSS_DIR="$HOME/.config/waybar/themes/css"
 WAYBAR_CSS_FILE="$HOME/.config/waybar/theme.css"
 WAYBAR_JSONC_DIR="$HOME/.config/waybar/themes/jsonc"
 WAYBAR_JSONC_FILE="$HOME/.config/waybar/config.jsonc"
-ROFI_THEMES_DIR="$HOME/.config/rofi/themes"
-ROFI_THEME_FILE="$HOME/.config/rofi/theme.rasi"
+ROFI_THEMES_DIR="$HOME/.config/rofi/colors"
+ROFI_THEME_FILE="$HOME/.config/rofi/colors/tokyonight.rasi"
 CURRENT_THEME_FILE="$HOME/.config/waybar/themes/current-theme"
 
 for dir in "$WAYBAR_CSS_DIR" "$WAYBAR_JSONC_DIR" "$ROFI_THEMES_DIR"; do

@@ -5,6 +5,8 @@
   "reload_style_on_change": true,
   "gtk-layer-shell": true,
 
+  // <<--< Positions >-->>
+
   "modules-left": [
     "custom/ws",            // window icon
     "custom/left1",
@@ -234,7 +236,7 @@
   },
 
   "clock#time": {
-    "format": "{:%I:%M}",
+    "format": "{:%H:%M}",
     "tooltip": false,
     // "tooltip-format": "Standard Time: {:%I:%M %p}",
     "min-length": 6,
@@ -242,7 +244,7 @@
   },
 
   "clock#date": {
-    "format": "󰨳 {:%d-%m}",
+    "format": "󰨳 {:%m-%d}",
     "tooltip-format": "<tt>{calendar}</tt>",
 
     "calendar": {
@@ -300,6 +302,16 @@
     "on-click": "~/.config/waybar/scripts/bluetooth-menu.sh",
     "on-click-right": "kitty --title '󰂯  Bluetooth TUI' bash -c bluetui",
     "interval": 1,
+    "min-length": 1,
+    "max-length": 1
+  },
+
+  "custom/update": {
+    "exec": "~/.config/waybar/scripts/system-update.sh",
+    "return-type": "json",
+    "format": "{}",
+    "on-click": "hyprctl dispatch exec '~/.config/waybar/scripts/system-update.sh up'",
+    "interval": 30,
     "min-length": 1,
     "max-length": 1
   },
