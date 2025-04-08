@@ -18,6 +18,9 @@ return {
     name = "nightfly",
     lazy = false,
     priority = 1000,
+    config = function()
+      vim.g.nightflyTransparent = true
+    end,
   },
   {
     "rose-pine/neovim",
@@ -77,21 +80,19 @@ return {
   {
     "Shatur/neovim-ayu",
     name = "ayu",
+  },
+  {
+    "folke/tokyonight.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {},
     config = function()
-      local colors = require("ayu.colors")
-      require("ayu").setup({
-        overrides = {
-          Normal = { bg = "None" },
-          NormalFloat = { bg = "none" },
-          ColorColumn = { bg = "None" },
-          SignColumn = { bg = "None" },
-          Folded = { bg = "None" },
-          FoldColumn = { bg = "None" },
-          CursorColumn = { bg = "None" },
-          VertSplit = { bg = "None" },
-        },
+      require("tokyonight").setup({
+        transparent = true,
+        keywords = { italic = true },
+        terminal_colors = true,
       })
-      vim.cmd("colorscheme ayu")
+      vim.cmd([[colorscheme tokyonight]])
     end,
   },
 }
