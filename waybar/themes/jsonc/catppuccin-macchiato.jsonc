@@ -374,7 +374,7 @@
     "format": " ",
     "tooltip": false,
     // "tooltip-format": "Power Menu",
-    "on-click": "~/.config/waybar/scripts/power-menu.sh"
+    "on-click": "wlogout -C ~/dotfiles/wlogout/style.css"
   },
 
   // <<--< Padding >-->>
