@@ -25,7 +25,7 @@ configuration {
     background:                  #0d1017cc;
     background-alt:              #0f1017dd;
     foreground:                  #FFFFFF;
-    selected:                    #00aaaaaa;
+    selected:                    #00aaccee;
     active:                      #7B6C5B;
     urgent:                      #934A1C;
 }
@@ -63,7 +63,7 @@ mainbox {
 imagebox {
     padding:                     20px;
     background-color:            transparent;
-    background-image:            url("~/Downloads/wallpapers/wp3.png", height);
+    background-image:            url("~/dotfiles/wallpapers/wp3_2.png", height);
     orientation:                 vertical;
     children:                    [ "inputbar", "dummy", "mode-switcher" ];
     border-radius:               10px;
