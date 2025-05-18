@@ -7,9 +7,6 @@ keymap.set("i", "jj", "<Esc>")
 keymap.set("n", "+", "<C-a>")
 keymap.set("n", "-", "<C-x>")
 
--- Select all
-keymap.set("n", "<C-a>", "gg<S-v>G")
-
 -- Tabs
 keymap.set("n", "te", ":tabedit")
 keymap.set("n", "<tab>", ":tabnext<Return>", opts)
