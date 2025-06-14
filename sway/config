@@ -12,7 +12,7 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term alacritty
+set $term kitty
 # Your preferred application launcher
 set $menu ~/.config/rofi/launchers/launcher.sh
 
@@ -212,6 +212,12 @@ bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
 bindsym $mod+Print exec sway-screenshot -m window
 bindsym Print exec sway-screenshot -m output
 bindsym $mod+Shift+Print exec sway-screenshot -m region
+
+
+client.focused          #cba6f7 #cba6f7 #181825 #cba6f7
+client.unfocused        #1e1e2e #1e1e2e #a6adc8 #181825
+client.focused_inactive #1e1e2e #1e1e2e #a6adc8 #1e1e2e
+client.urgent           #f38ba8 #f38ba8 #ffffff #f38ba8
 
 
 set $icon_theme "Reversal-green"
