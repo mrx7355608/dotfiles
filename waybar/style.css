@@ -7,7 +7,7 @@
 }
 
 window#waybar {
-  background-color: transparent;
+  background-color: #181825;
   transition-property: background-color;
   transition-duration: 0.5s;
 }
@@ -59,7 +59,7 @@ window#waybar.hidden {
   margin: 4px 3px;
   padding: 4px 12px;
   background-color: #1e1e2e;
-  color: #181825;
+  color: #1e1e2e;
 }
 
 #custom-power {
@@ -76,7 +76,6 @@ window#waybar.hidden {
   border-radius: 6px;
   color: #cba6f7;
   background-color: #181825;
-  border: 1px solid #cba6f7;
 }
 
 #memory {
