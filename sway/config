@@ -82,7 +82,7 @@ input "type:touchpad" {
     # Reload the configuration file
     bindsym $mod+Shift+c reload
 
-    bindsym $mod+n exec kitty --listen-on=unix:/tmp/mykitty -e nnn -a
+    bindsym $mod+n exec ~/dotfiles/sway/scripts/nnn-launch.sh
 
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
